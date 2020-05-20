@@ -1,2 +1,2 @@
 # Navigation
-Praticando reactnavigation
+Praticando reactnavigation versão 5.x
