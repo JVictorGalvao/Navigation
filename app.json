@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "navi",
-    "slug": "navi",
+    "name": "navigation",
+    "slug": "navigation",
     "platforms": [
       "ios",
       "android",
