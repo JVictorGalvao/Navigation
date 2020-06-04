@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "navigation",
+    "name": "Navigation",
     "slug": "navigation",
     "platforms": [
       "ios",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "description": "Praticando react navigation",
+    "githubUrl": "https://github.com/JVictorGalvao/Navigation"
   }
 }
