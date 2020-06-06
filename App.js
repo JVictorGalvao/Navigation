@@ -1,16 +1,25 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
-import { Platform, StatusBar, StyleSheet, View } from 'react-native';
+import { Platform, StatusBar, StyleSheet, View , Text} from 'react-native';
 
 import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import LinkingConfiguration from './navigation/LinkingConfiguration';
 
+import TermoDeUso from './screens/TermoDeUso'
+import RegistroApresentacao from './screens/RegistroApresentacao'
+import ScreenContainer from './components/ScreenContainer'
+
 const Stack = createStackNavigator();
 
 export default function App(props) {
-  const isLoadingComplete = useCachedResources();
+  return(
+    <RegistroApresentacao/>
+    //<TermoDeUso/>
+  );
+}
+  /*const isLoadingComplete = useCachedResources();
 
   if (!isLoadingComplete) {
     return null;
@@ -34,3 +43,4 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+*/

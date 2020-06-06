@@ -9,7 +9,7 @@ Coisas à fazer
 
 [x] Rodar no emulador o app inicial
 
-[] Criar as telas que serão utilizadas para navegar
+[x] Criar as telas que serão utilizadas para navegar
 
 [] Criar a navegação do monitor
 
