@@ -10,9 +10,8 @@ const ScreenTitle = props => {
           style={[
             styles.subtitle,
             {
-              textAlign: "center",
+              textAlign: 'left',
               color: "black",
-              fontWeight: "bold",
               fontSize: 16
             }
           ]}

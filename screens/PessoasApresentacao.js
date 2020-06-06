@@ -3,12 +3,12 @@ import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
-export default function RegistroApresentacao() {
+export default function PessoasApresentacao() {
   return(
     <ScreenContainer>
       <ScreenTitle
-          title="Apresentação"
-          subtitle="Escaneie o código para visualizar os projetos que foram alocados a essa apresentação"
+          title="Pessoas"
+          subtitle="Escaneie ou digitalize as credenciais dos avaliadores para adicioná-los a apresentação"
         />
         <View style={styles.button}>
           <Button title='Escaneei o código'/>

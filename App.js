@@ -10,12 +10,16 @@ import LinkingConfiguration from './navigation/LinkingConfiguration';
 import TermoDeUso from './screens/TermoDeUso'
 import RegistroApresentacao from './screens/RegistroApresentacao'
 import ScreenContainer from './components/ScreenContainer'
+import RegistroApresentacaoInput from './screens/RegistroApresentacaoInput'
+import PessoasApresentacao from './screens/PessoasApresentacao'
+
 
 const Stack = createStackNavigator();
 
 export default function App(props) {
   return(
-    <RegistroApresentacao/>
+    <PessoasApresentacao/>
+    //<RegistroApresentacaoInput/>
     //<TermoDeUso/>
   );
 }
