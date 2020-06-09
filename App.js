@@ -12,13 +12,26 @@ import RegistroApresentacao from './screens/RegistroApresentacao'
 import ScreenContainer from './components/ScreenContainer'
 import RegistroApresentacaoInput from './screens/RegistroApresentacaoInput'
 import PessoasApresentacao from './screens/PessoasApresentacao'
-
+import ProjetosApresentacao from './screens/ProjetosApresentacao'
+import Apresentacao from './screens/Apresentacao'
+import RegistroPessoa from './screens/RegistroPessoa'
 
 const Stack = createStackNavigator();
 
 export default function App(props) {
   return(
-    <PessoasApresentacao/>
+    <View style={styles.container}>
+        {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
+        <NavigationContainer linking={LinkingConfiguration}>
+          <Stack.Navigator>
+            <Stack.Screen name="Monitor" component={BottomTabNavigator} />
+            <Stack.Screen name="RegistroApresentacao" component={RegistroApresentacao} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </View>
+    //<Apresentacao/>
+    //<ProjetosApresentacao/>
+    //<PessoasApresentacao/>
     //<RegistroApresentacaoInput/>
     //<TermoDeUso/>
   );
@@ -40,11 +53,10 @@ export default function App(props) {
     );
   }
 }
-
+*/
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
   },
 });
-*/
