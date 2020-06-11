@@ -1,5 +1,6 @@
 {
   "expo": {
+    "privacy": "public",
     "name": "Navigation",
     "slug": "navigation",
     "platforms": [

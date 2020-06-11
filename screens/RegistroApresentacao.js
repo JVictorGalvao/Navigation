@@ -3,7 +3,7 @@ import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
-export default function RegistroApresentacao() {
+export default function RegistroApresentacao({navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
@@ -11,9 +11,13 @@ export default function RegistroApresentacao() {
           subtitle="Escaneie o código para visualizar os projetos que foram alocados a essa apresentação"
         />
         <View style={styles.button}>
-          <Button title='Escaneei o código'/>
+          <Button title='Escaneei o código'
+            onPress={() => navigation.navigate('Monitor')}
+          />
 
-          <Button title='Digitar o código'/>
+          <Button title='Digitar o código'
+            onPress={() => navigation.navigate('RegistroApresentacaoInput')}
+          />
         </View>
     </ScreenContainer>
   );

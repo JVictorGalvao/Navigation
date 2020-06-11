@@ -3,23 +3,21 @@ import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 import Card from '../components/Card'
-import RegistroApresentacao from '../screens/RegistroApresentacao'
 
 
 
-export default function PessoasApresentacao({navigation}) {
+export default function Identidade({navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
-          title="Pessoas"
-          subtitle="Escaneie ou digitalize as credenciais dos avaliadores para adicioná-los a apresentação"
+          title="Identifique-se"
+          subtitle="Mostre as suas credenciais a um monitor para começar a avaliação."
         />
-        <Card texto="Avaliador 1"/>
-        <Card texto="Avaliador 2"/>
-        <Card texto="Avaliador 3"/>
+        <Card texto="Dados pessoais"/>
+        <Card texto="QrCode"/>
         <View style={styles.button}>
-          <Button title='Adcionar Professor'
-            onPress={() => navigation.navigate('RegistroPessoa')}
+          <Button title='Sair'
+            //onPress={() => navigation.navigate('RegistroPessoa')}
             />
         </View>
     </ScreenContainer>
