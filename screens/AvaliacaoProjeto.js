@@ -1,24 +1,22 @@
-import React, {useState} from 'react';
-import { View, Button, StyleSheet, } from 'react-native';
+import React from 'react';
+import { View, Button, StyleSheet, TextInput } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
-export default function Login({navigation}) {
+
+
+export default function Avaliacoes() {
+
+
   return(
   <ScreenContainer>
     <ScreenTitle
-        title="Login"
+        title="Avaliacoes"
+        subtitle="Os projetos avaliados por você poderão ser consultados aqui"
       />
     <View style={styles.container}>
       <View style={styles.button}>
-        <Button title="Monitor"
-          onPress={() => navigation.navigate('Monitor')}
-        />
-      </View>
-      <View style={styles.button}>
-        <Button title="Avaliador"
-          onPress={() => navigation.navigate('Avaliador')}
-          />
+        <Button title='Enviar'/>
       </View>
     </View>
   </ScreenContainer>

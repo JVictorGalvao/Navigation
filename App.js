@@ -6,19 +6,16 @@ import Identidade from './screens/Identidade'
 import Avaliacoes from './screens/Avaliacoes'
 import Projetos from './screens/Projetos'
 import MonitorRoutes from './navigation/Monitor'
+import AvaliadorRoutes from './navigation/Avaliador'
+import RootRoutes from './navigation/RootNavigator'
 
 
 export default class App extends React.Component{
-
-  state={
-    apresentando: ""
-  }
-  updateState(){
-    this.setState({teste: "2"})
-  }
   render(){
     return(
-      < MonitorRoutes/>
+      <RootRoutes/>
+      //<AvaliadorRoutes/>
+      //<MonitorRoutes/>
       //<Login/>
       //<Monitor/>
       //<ReportProblemas/>

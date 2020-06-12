@@ -53,7 +53,6 @@ function StackProjetos(){
 
 export default function MonitorRoutes(){
   return(
-    <NavigationContainer>
       <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
         <Stack.Screen 
           name="RegistroApresentacaoScreen"
@@ -77,6 +76,5 @@ export default function MonitorRoutes(){
           options={{headerShown: false}}
         />
       </Stack.Navigator>
-    </NavigationContainer>
   );
 }

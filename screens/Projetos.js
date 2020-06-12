@@ -5,8 +5,8 @@ import ScreenTitle from '../components/ScreenTitle';
 
 
 
-export default function Avaliacoes() {
-  const [value, onChangeText] = React.useState();
+export default function Projetos() {
+
 
   return(
   <ScreenContainer>
