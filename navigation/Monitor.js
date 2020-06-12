@@ -19,9 +19,18 @@ const Stack = createStackNavigator();
  function MonitorTabs() {
   return (  
       <Tab.Navigator initialRouteName="PESSOAS">
-        <Tab.Screen name="PESSOAS" component={PessoasApresentacao} />
-        <Tab.Screen name="PROJETOS" component={ProjetosApresentacao} />
-        <Tab.Screen name="APRESENTACAO" component={Apresentacao} />
+        <Tab.Screen 
+          name="PESSOAS" 
+          component={PessoasApresentacao} 
+        />
+        <Tab.Screen 
+          name="PROJETOS" 
+          component={ProjetosApresentacao} 
+        />
+        <Tab.Screen 
+          name="APRESENTACAO" 
+          component={Apresentacao} 
+        />
       </Tab.Navigator>
   );
 }
@@ -29,8 +38,14 @@ const Stack = createStackNavigator();
 function StackRegistroApresentacao(){
   return(
     <Stack.Navigator initialRouteName="RegistroApresentacao">
-      <Stack.Screen name="RegistroApresentacao" component={RegistroApresentacao}/>
-      <Stack.Screen name= "RegistroApresentacaoInput" component={RegistroApresentacaoInput}/>
+      <Stack.Screen 
+        name="RegistroApresentacao" 
+        component={RegistroApresentacao}
+      />
+      <Stack.Screen 
+        name= "RegistroApresentacaoInput" 
+        component={RegistroApresentacaoInput}
+      />
     </Stack.Navigator>
   );
 }
@@ -38,8 +53,14 @@ function StackRegistroApresentacao(){
 function StackRegistroPessoa(){
   return(
     <Stack.Navigator initialRouteName="RegistroPessoa">
-      <Stack.Screen name="RegistroPessoa" component={RegistroPessoa}/>
-      <Stack.Screen name="RegistroPessoaInput" component={RegistroPessoaInput}/>
+      <Stack.Screen 
+        name="RegistroPessoa" 
+        component={RegistroPessoa}
+      />
+      <Stack.Screen 
+        name="RegistroPessoaInput" 
+        component={RegistroPessoaInput}
+      />
     </Stack.Navigator>
   );
 }
@@ -47,7 +68,10 @@ function StackRegistroPessoa(){
 function StackProjetos(){
   return(
     <Stack.Navigator>
-      <Stack.Screen name="GerenciaProjetos" component={GerenciarProjeto}/>
+      <Stack.Screen 
+        name="GerenciaProjetos" 
+        component={GerenciarProjeto}
+      />
     </Stack.Navigator>
   );
 }
@@ -55,7 +79,10 @@ function StackProjetos(){
 function StackProblema(){
   return(
     <Stack.Navigator>
-      <Stack.Screen name="ReportarProblema" component={ReportProblemas}/>
+      <Stack.Screen 
+        name="ReportarProblema" 
+        component={ReportProblemas}
+      />
     </Stack.Navigator>
   );
 }
