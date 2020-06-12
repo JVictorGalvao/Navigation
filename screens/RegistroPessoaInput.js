@@ -3,12 +3,12 @@ import { View, Button, StyleSheet, Text, TextInput } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
-export default function RegistroApresentacaoInput({navigation}) {
+export default function RegistroPessoaInput({navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
-        title="Apresentação"
-        subtitle="Digite o código para visualizar os projetos que foram alocados a essa apresentação"
+        title="Pessoa"
+        subtitle="Digite as credenciais de um avalliador para adiciona-lo a apresentação"
       />
       <View style={styles.container}>
         <TextInput
@@ -26,12 +26,12 @@ export default function RegistroApresentacaoInput({navigation}) {
       <View style={styles.button}>
         <Button 
           title='Confirmar'
-          onPress={() => navigation.navigate('MonitorTab')}
+          onPress={() => navigation.navigate('PESSOAS')}
         />
         <Button 
           color = 'gray'
           title='Cancelar'
-          onPress={() => navigation.navigate('RegistroApresentacao')}
+          onPress={() => navigation.navigate('RegistroPessoa')}
         />
       </View>
     </ScreenContainer>

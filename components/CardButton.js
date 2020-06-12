@@ -1,12 +1,14 @@
 import * as React from "react"
 import { StyleSheet, Text, View, ViewStyle, Button } from "react-native"
 
-const CardButton = props => {
+const CardButton = props  => {
   return (
     <View style={[styles.titleContainer, props.style]}>
       <Text style={styles.subtitle}>{props.texto}</Text>
       <View style={styles.button}>
-        <Button  title="Encerrar projeto"/>
+        <Button  title={props.titulobotao}
+          onPress={props.navegacao}
+          />
       </View>
     </View>
   )

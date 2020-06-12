@@ -4,7 +4,7 @@ import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 import CardButton from '../components/CardButton';
 import Card from '../components/Card'
-export default function Apresentacao() {
+export default function Apresentacao({navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
@@ -12,9 +12,14 @@ export default function Apresentacao() {
           subtitle="Visualize as informações e encerre a apresentação ao seu término"
         />
         <Card texto="Apresentacao 1"/>
-        <CardButton texto="Dados da apresentacao"/>
+        <CardButton texto="Dados da apresentacao"
+          titulobotao="Encerrar projeto"
+          navegacao={() => navigation.navigate("RegistroApresentacao")}
+        />
         <View style={styles.button}>
-          <Button title='Sair da Aplicação'/>
+          <Button title='Sair da Aplicação'
+          //onPress={() => navigation.navigate("RegistroApresentacao")}
+          />
         </View>
     </ScreenContainer>
   );

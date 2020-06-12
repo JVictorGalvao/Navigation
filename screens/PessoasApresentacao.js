@@ -3,7 +3,6 @@ import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 import Card from '../components/Card'
-import RegistroApresentacao from '../screens/RegistroApresentacao'
 
 
 
@@ -19,7 +18,7 @@ export default function PessoasApresentacao({navigation}) {
         <Card texto="Avaliador 3"/>
         <View style={styles.button}>
           <Button title='Adcionar Professor'
-            onPress={() => navigation.navigate('RegistroPessoa')}
+            onPress={() => navigation.navigate('RegistroPessoaScreen')}
             />
         </View>
     </ScreenContainer>

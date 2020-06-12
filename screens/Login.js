@@ -1,9 +1,7 @@
-import React from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import { View, Button, StyleSheet, } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
-
-
 
 export default function Login() {
   return(
@@ -13,10 +11,12 @@ export default function Login() {
       />
     <View style={styles.container}>
       <View style={styles.button}>
-        <Button title='Monitor'/>
+        <Button title="Monitor"
+        //onPress = {() => updateState()}
+        />
       </View>
       <View style={styles.button}>
-        <Button title='Avaliador'/>
+        <Button title="Avaliador"/>
       </View>
     </View>
   </ScreenContainer>

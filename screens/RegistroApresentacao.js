@@ -12,7 +12,7 @@ export default function RegistroApresentacao({navigation}) {
         />
         <View style={styles.button}>
           <Button title='Escaneei o código'
-            onPress={() => navigation.navigate('Monitor')}
+            onPress={() => navigation.navigate('MonitorTab')}
           />
 
           <Button title='Digitar o código'

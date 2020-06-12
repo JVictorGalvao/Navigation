@@ -4,7 +4,7 @@ import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 import Card from '../components/Card'
 
-export default function ProjetosApresentacao() {
+export default function ProjetosApresentacao({navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
@@ -13,7 +13,9 @@ export default function ProjetosApresentacao() {
         />
         <Card texto="Projeto 1"/>
         <View style={styles.button}>
-          <Button title='Gerenciar'/>
+          <Button title='Gerenciar'
+            onPress={() => navigation.navigate("ProjetosScreen")}
+          />
         </View>
         <Card texto="Projeto 2"/>
         <View style={styles.button}>
