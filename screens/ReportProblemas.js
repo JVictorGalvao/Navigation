@@ -1,13 +1,18 @@
 import React from 'react';
-import { View, Button, StyleSheet, TextInput } from 'react-native';
+import { Alert, View, Button, StyleSheet, TextInput } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
 
 
 export default function ReportProblemas() {
-  const [value, onChangeText] = React.useState();
-
+    const showAlert = () =>{
+       Alert.alert(
+          'Problema enviado!'
+       )
+    }
+    
+ 
   return(
   <ScreenContainer>
     <ScreenTitle
@@ -18,11 +23,13 @@ export default function ReportProblemas() {
         <TextInput
          style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
          onChangeText={text => onChangeText(text)}
-         value={value}
+
          placeholder="Digite o problema aqui"/>
       </View>
       <View style={styles.button}>
-        <Button title='Enviar'/>
+        <Button title='Enviar'
+          onPress={()=>{showAlert()}}
+        />
       </View>
     </View>
   </ScreenContainer>

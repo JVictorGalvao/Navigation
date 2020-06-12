@@ -17,8 +17,8 @@ export default function Identidade({navigation}) {
         <Card texto="QrCode"/>
         <View style={styles.button}>
           <Button title='Sair'
-            //onPress={() => navigation.navigate('RegistroPessoa')}
-            />
+            onPress={() => navigation.navigate("Login")}
+          />
         </View>
     </ScreenContainer>
   );

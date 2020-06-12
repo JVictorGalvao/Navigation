@@ -11,6 +11,7 @@ import RegistroApresentacaoInput from '../screens/RegistroApresentacaoInput'
 import RegistroPessoa from '../screens/RegistroPessoa'
 import RegistroPessoaInput from '../screens/RegistroPessoaInput'
 import GerenciarProjeto from '../screens/GerenciarProjeto'
+import ReportProblemas from '../screens/ReportProblemas'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -51,6 +52,14 @@ function StackProjetos(){
   );
 }
 
+function StackProblema(){
+  return(
+    <Stack.Navigator>
+      <Stack.Screen name="ReportarProblema" component={ReportProblemas}/>
+    </Stack.Navigator>
+  );
+}
+
 export default function MonitorRoutes(){
   return(
       <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
@@ -73,6 +82,11 @@ export default function MonitorRoutes(){
         <Stack.Screen
           name="ProjetosScreen"
           component={StackProjetos}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ReportScreen"
+          component={StackProblema}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

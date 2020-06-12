@@ -17,10 +17,16 @@ export default function Apresentacao({navigation}) {
           navegacao={() => navigation.navigate("RegistroApresentacao")}
         />
         <View style={styles.button}>
-          <Button title='Sair da Aplicação'
-          //onPress={() => navigation.navigate("RegistroApresentacao")}
+          <Button title='Reportar Problema'
+            onPress={() => navigation.navigate("ReportScreen")}
           />
         </View>
+        <View style={styles.button}>
+          <Button title='Sair da Aplicação'
+            onPress={() => navigation.navigate("Login")}
+          />
+        </View>
+        
     </ScreenContainer>
   );
 }
