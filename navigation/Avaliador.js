@@ -20,32 +20,6 @@ const Stack = createStackNavigator();
   );
 }
 
-/*function StackRegistroApresentacao(){
-  return(
-    <Stack.Navigator initialRouteName="RegistroApresentacao">
-      <Stack.Screen name="RegistroApresentacao" component={RegistroApresentacao}/>
-      <Stack.Screen name= "RegistroApresentacaoInput" component={RegistroApresentacaoInput}/>
-    </Stack.Navigator>
-  );
-}
-
-function StackRegistroPessoa(){
-  return(
-    <Stack.Navigator initialRouteName="RegistroPessoa">
-      <Stack.Screen name="RegistroPessoa" component={RegistroPessoa}/>
-      <Stack.Screen name="RegistroPessoaInput" component={RegistroPessoaInput}/>
-    </Stack.Navigator>
-  );
-}
-
-function StackProjetos(){
-  return(
-    <Stack.Navigator>
-      <Stack.Screen name="GerenciaProjetos" component={GerenciarProjeto}/>
-    </Stack.Navigator>
-  );
-}
-*/
 export default function AvaliadorRoutes(){
   return(
       <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
