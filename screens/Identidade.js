@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
@@ -6,7 +6,7 @@ import Card from '../components/Card'
 
 
 
-export default function Identidade({navigation}) {
+export default function Identidade({navigation}){
   return(
     <ScreenContainer>
       <ScreenTitle

@@ -10,10 +10,11 @@ import AvaliadorRoutes from './navigation/Avaliador'
 import RootRoutes from './navigation/RootNavigator'
 
 
-export default class App extends React.Component{
-  render(){
+export default function App (){
     return(
-      <RootRoutes/>
+      <View style={styles.container}>
+        <RootRoutes/>
+      </View>
       //<AvaliadorRoutes/>
       //<MonitorRoutes/>
       //<Login/>
@@ -23,7 +24,6 @@ export default class App extends React.Component{
       //<Avaliacoes/>
       //<Projetos/>
   );
-}
 }
 
 const styles = StyleSheet.create({

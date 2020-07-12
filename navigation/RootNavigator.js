@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,7 +10,7 @@ import AvaliadorRoutes from "./Avaliador"
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-function AvaliadorTabs() {
+/*function AvaliadorTabs() {
   return (  
       <Tab.Navigator initialRouteName="IDENTIDADE">
         <Tab.Screen name="IDENTIDADE" component={Identidade} />
@@ -18,7 +18,7 @@ function AvaliadorTabs() {
         <Tab.Screen name="AVALIACOES" component={Avaliacoes} />
       </Tab.Navigator>
   );
-}
+}*/
 
 /*function StackRegistroApresentacao(){
   return(
@@ -46,26 +46,36 @@ function StackProjetos(){
   );
 }
 */
-export default function RootRoutes(){
+export default function RootRoutes({route}){
+  //const { usuario } = route.params;
+  const [monitor, setMonitor] = useState("");
   return(
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
-        <Stack.Screen 
-          name="Login"
-          component={Login} 
-          options={{headerShown: false}}
-        />
-        <Stack.Screen 
-          name="Monitor"
-          component={MonitorRoutes} 
-          options={{headerShown: false}}
-        />
-        <Stack.Screen 
-          name="Avaliador"
-          component={AvaliadorRoutes} 
-          options={{headerShown: false}}
-        />
+      <Stack.Navigator>
+        <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/> 
+          <Stack.Screen name="Monitor" component={MonitorRoutes} options={{headerShown: false}}/>
+          <Stack.Screen name="Avaliador" component={AvaliadorRoutes} options={{headerShown: false}} />
       </Stack.Navigator>
     </NavigationContainer>
+
+    // <NavigationContainer>
+    //   <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
+    //     <Stack.Screen 
+    //       name="Login"
+    //       component={Login} 
+    //       options={{headerShown: false}}
+    //     />
+    //     <Stack.Screen 
+    //       name="Monitor"
+    //       component={MonitorRoutes} 
+    //       options={{headerShown: false}}
+    //     />
+    //     <Stack.Screen 
+    //       name="Avaliador"
+    //       component={AvaliadorRoutes} 
+    //       options={{headerShown: false}}
+    //     />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
   );
 }

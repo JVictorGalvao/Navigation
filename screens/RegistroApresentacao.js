@@ -3,7 +3,7 @@ import { View, Button, StyleSheet, Text } from 'react-native';
 import ScreenContainer from '../components/ScreenContainer';
 import ScreenTitle from '../components/ScreenTitle';
 
-export default function RegistroApresentacao({navigation}) {
+export default function RegistroApresentacao({route, navigation}) {
   return(
     <ScreenContainer>
       <ScreenTitle
@@ -18,6 +18,7 @@ export default function RegistroApresentacao({navigation}) {
           <Button title='Digitar o código'
             onPress={() => navigation.navigate('RegistroApresentacaoInput')}
           />
+          <Text>{route.usuario}</Text>
         </View>
     </ScreenContainer>
   );

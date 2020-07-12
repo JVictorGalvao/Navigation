@@ -41,10 +41,12 @@ function StackRegistroApresentacao(){
       <Stack.Screen 
         name="RegistroApresentacao" 
         component={RegistroApresentacao}
+        options={{headerShown: false}}
       />
       <Stack.Screen 
         name= "RegistroApresentacaoInput" 
         component={RegistroApresentacaoInput}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
@@ -56,10 +58,12 @@ function StackRegistroPessoa(){
       <Stack.Screen 
         name="RegistroPessoa" 
         component={RegistroPessoa}
+        options={{headerShown: false}}
       />
       <Stack.Screen 
         name="RegistroPessoaInput" 
         component={RegistroPessoaInput}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
@@ -71,6 +75,7 @@ function StackProjetos(){
       <Stack.Screen 
         name="GerenciaProjetos" 
         component={GerenciarProjeto}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
@@ -82,6 +87,7 @@ function StackProblema(){
       <Stack.Screen 
         name="ReportarProblema" 
         component={ReportProblemas}
+        options={{headerShown: false}}
       />
     </Stack.Navigator>
   );
@@ -89,7 +95,7 @@ function StackProblema(){
 
 export default function MonitorRoutes(){
   return(
-      <Stack.Navigator screenOptions={{ gestureEnabled: false }}  >
+      <Stack.Navigator>
         <Stack.Screen 
           name="RegistroApresentacaoScreen"
           component={StackRegistroApresentacao} 
